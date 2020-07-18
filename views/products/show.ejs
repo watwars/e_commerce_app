@@ -1,0 +1,31 @@
+<%- include("../partials/header.ejs") %> 
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <img src="<%= product.image %> " alt="Image" class="landing-image">
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <h1 style="text-transform: capitalize;"><%= product.name %> </h1>
+            <!-- show author -->
+            <p></p>
+            <h2>$<%= product.price %> </h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>0 rating</p>
+            <a href="#">See Reviews</a>
+            <a href="#">Write a Review</a>
+            <p><%= product.description %> </p>
+            <button class="btn btn-lg btn-info">Contact Seller</button>
+            <button class="btn btn-xs btn-warning"><a href="/products/<%= product._id %>/edit">Edit</a></button>
+            <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
+                <button class="btn btn-xs btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include("../partials/footer.ejs") %> 

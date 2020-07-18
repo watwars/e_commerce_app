@@ -1,0 +1,32 @@
+.landing-header{
+    font-size: 70px;
+}
+
+.landing{
+    margin-left: 15%;
+    margin-top: 7%;
+}
+
+.index-heading{
+    font-size: 63px;
+}
+
+.index-p{
+    font-size: 25px;
+}
+
+.landing-btn{
+    background-color: orange;
+    font-size: 28px;
+}
+
+.card{
+    margin-top: 20px;
+}
+
+.checked{
+    color: orange;
+}
+
+
+
